@@ -1,12 +1,14 @@
 import React from 'react'
 import './Header.scss'
+import { Search, ShoppingBasket } from '@mui/icons-material'
 
 function Header() {
     return (
         <div className='header'>
             <img className='header__logo' src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt='amazon' />
             <div className='header__search'>
-                <input className='header__search__Input' type='text' />
+                <input className='header__searchInput' type='text' />
+                <Search className='header__searchIcon' />
             </div>
             <div className='header__nav'>
                 <div className='header__option'>
@@ -20,6 +22,10 @@ function Header() {
                 <div className='header__option'>
                     <span className='header__optionLineOne'>Your</span>
                     <span className='header__optionLineTwo'>Prime</span>
+                </div>
+                <div className='header__optionBasket'>
+                    <ShoppingBasket />
+                    <span className='header__optionLineTwo header__basketCount'>0</span>
                 </div>
             </div>
         </div>
