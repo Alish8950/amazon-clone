@@ -14,8 +14,10 @@ function Product() {
                     <p>*</p>
                 </div>
             </div>
+            <div style={{width:'100%'}}>
+                <img src='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg' alt="" />
+            </div>
 
-            <img src='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg' alt="" />
 
             <button>Add to Basket</button>
         </div>
